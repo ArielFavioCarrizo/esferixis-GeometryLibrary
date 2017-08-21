@@ -1,0 +1,19 @@
+Point( (0,0) )
+
+Line( (0,0), (1,0) )
+LineSegment( (-0.25, 0), (0.25, 0) )
+
+Circumference( (0,0), 0.25 )
+Circumference( (0,0), 0.4 )
+
+Circle( Circumference( (0,0), 0.25 ) )
+Circle( Circumference( (0,0), 0.4 ) )
+
+CircumferenceSegment( Circumference( (0,0), 0.25 ), [0,1.7] )
+CircumferenceSegment( Circumference( (0,0), 0.4 ), [0,1.5] )
+
+SolidCapsule( LineSegment( (-0.25, 0), (0.25, 0) ), 0.1 )
+SolidCapsule( LineSegment( (-0.3, 0), (0.3, 0) ), 0.15 )
+
+ConvexPolygon( (-0.25, 0), (0, -0.25), (0.25, 0), (0, 0.5) )
+ConvexPolygon( (-0.5, 0), (-0.25, -0.2), (0, -0.25), (0.4, -0.1), (0, 0.7) )
